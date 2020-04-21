@@ -25,18 +25,20 @@ export default {
   methods: {
    itemClick(index) {
      this.currentIndex = index;
+     this.$emit('tab-click', index);
    }
   }
 }
 </script>
 <style scoped>
 .tab-control {
-  height: 36px;
+  height: 40px;
   text-align: center;
   line-height: 40px;
   display: flex;
   color: rgb(122, 122, 122);
   font-size: 15px;
+  margin-bottom: 10px;
 }
 
 .tab-control-item {
